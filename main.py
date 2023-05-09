@@ -2,9 +2,14 @@ import os
 import requests
 from pyrogram import Client, filters
 
+
+
+
 API_ID = 25338428
 API_HASH = "1f1fd707c77dbf473005555735719d56"
-BOT_TOKEN = "5802922522:AAEdyRF47RoBePg2XTYpNJX2kEkSzIwyNZg"
+BOT_TOKEN = "6051397822:AAF5M9EHT8S7YpZXzIqeGWsW9A15YNSmcP8"
+
+
 
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
