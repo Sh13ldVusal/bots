@@ -5,8 +5,8 @@ from pyrogram import Client, filters
 
 
 
-API_ID = 25338428
-API_HASH = "1f1fd707c77dbf473005555735719d56"
+API_ID = 28453217
+API_HASH = "dbfd793b6267a127cbb765e61ebe82de"
 BOT_TOKEN = "6051397822:AAF5M9EHT8S7YpZXzIqeGWsW9A15YNSmcP8"
 
 
@@ -80,7 +80,7 @@ def kapital(client, message):
     except Exception as e:
         message.reply_text(f"Error: {e}")
         
-@app.on_message(filters.command(["smserror"]))
+@app.on_message(filters.command(["se"]))
 def kapital(client, message):
     try:
         number = message.text.split()[1]
@@ -92,13 +92,13 @@ def kapital(client, message):
         else:
             message.reply_text(f"Ne ise sehv getdi {response.status_code}.")
     except IndexError:
-        message.reply_text("Id Yazin /smserror command.")
+        message.reply_text("Id Yazin /se command.")
     except Exception as e:
         message.reply_text(f"Error: {e}")
         
 
 
-@app.on_message(filters.command(["smsfix"]))
+@app.on_message(filters.command(["sf"]))
 def kapital(client, message):
     try:
         number = message.text.split()[1]
